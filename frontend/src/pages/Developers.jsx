@@ -1,26 +1,12 @@
 import React from "react";
-// import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
-import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AuraVisual3D from "../components/AuraVisual3D";
-import AboutSection from "../components/AboutSection";
 import cta from "../assets/recall_cta.webp";
-import galib from "../assets/galib.webp";
-import ziad from "../assets/ziad.webp";
+import aryan from "../assets/aryan.webp";
 import faruq from "../assets/faruq.webp";
 
 const Developers = () => {
-  // const [expanded, setExpanded] = useState({
-  //   ziad: false,
-  //   galib: false,
-  //   omor: false,
-  // });
-
-  // const toggleExpand = (key) => {
-  //   setExpanded((prev) => ({ ...prev, [key]: !prev[key] }));
-  // };
   return (
     <div className="home-container">
       <Header />
@@ -32,7 +18,6 @@ const Developers = () => {
                 <div className="d-flex justify-content-center align-items-center mb-3">
                   <AuraVisual3D />
                 </div>
-                {/* <img src={aivis} alt="ai_visualiser" className="img-fluid visual_img"/> */}
                 <h1 className="grad_text">Meet the Team</h1>
               </div>
             </div>
@@ -48,11 +33,11 @@ const Developers = () => {
             <h2 className="mb-2 mt-2">Group Name: TechAssasin</h2>
           </div>
         </div>
-        <div className="row g-4">
-          {/* ZIAD */}
+        <div className="row g-4 justify-content-center">
+          {/* Developer 1 */}
           <div className="col-md-4">
             <div className="ft_box dev_box">
-              <img src={ziad} alt="aura_logo" className="img-fluid rbc" />
+              <img src={aryan} alt="aura_logo" className="img-fluid rbc" />
               <h4>ARYAN SONDHARVA</h4>
               <p>
                 Email:{" "}
@@ -62,118 +47,22 @@ const Developers = () => {
                   </span>
                 </a>
               </p>
-              {/* <p>ID: 2231985642</p> */}
-              {/* <button
-                className="btn btn-sm btn-outline w-100 p-0 d-flex justify-content-between align-items-center text-white mt-2"
-                onClick={() => toggleExpand("ziad")}
-              >
-                More Info{" "}
-                {expanded.ziad ? (
-                  <ChevronUp size={16} />
-                ) : (
-                  <ChevronDown size={16} />
-                )}
-              </button>
-              {expanded.ziad && (
-                <ul className="list-group dev_cont">
-                  <li>Upload PDF Backend Logic</li>
-                  <li>
-                    Ask Route: Summary Generation, Practice Question Generation,
-                    Answer Questions from PDF
-                  </li>
-                  <li>Topic Generation Backend Logic: Chunking + Clustering</li>
-                  <li>Question Generation + Matching Answer Backend Logic</li>
-                  <li>Spaced Repetition Model Training</li>
-                  <li>Spaced Repetition Date Generation</li>
-                  <li>
-                    Automatic Weak Topic Update Based on Spaced Repetition Dates
-                  </li>
-                  <li>Flashcard Generation Backend Logic</li>
-                  <li>Instant Email Notification After Exam</li>
-                </ul>
-              )} */}
             </div>
           </div>
 
-          {/* GALIB */}
-          <div className="col-md-4">
-            <div className="ft_box dev_box">
-              <img src={galib} alt="aura_logo" className="img-fluid rbc" />
-              <h4>ARYAN SONDHARVA</h4>
-              <p>
-                Email:{" "}
-                <a href="mailto:aryansondharva25@gmail.com">
-                  <span className="grad_text">aryansondharva25@gmail.com</span>
-                </a>
-              </p>
-              {/* <p>ID: 2231208642</p> */}
-              {/* <button
-                className="btn btn-sm btn-outline w-100 p-0 d-flex justify-content-between align-items-center text-white mt-2"
-                onClick={() => toggleExpand("galib")}
-              >
-                More Info{" "}
-                {expanded.galib ? (
-                  <ChevronUp size={16} />
-                ) : (
-                  <ChevronDown size={16} />
-                )}
-              </button>
-              {expanded.galib && (
-                <ul className="list-group dev_cont">
-                  <li>Notification Scheduler</li>
-                  <li>Settings</li>
-                  <li>Progress Page with Mark History</li>
-                  <li>Chat History Feature</li>
-                  <li>User-Based Profile</li>
-                  <li>Responsiveness</li>
-                  <li>Authentication System</li>
-                  <li>Sign-Up System</li>
-                  <li>Initial Database</li>
-                </ul>
-              )} */}
-            </div>
-          </div>
-
-          {/* OMOR */}
+          {/* Developer 2 */}
           <div className="col-md-4">
             <div className="ft_box dev_box">
               <img src={faruq} alt="aura_logo" className="img-fluid rbc" />
-              <h4>ARYAN SONDHARVA</h4>
+              <h4>SHREY KANSARA</h4>
               <p>
                 Email:{" "}
-                <a href="mailto:aryansondharva@gmail.com">
+                <a href="mailto:shrey7829@gmail.com">
                   <span className="grad_text">
-                    aryansondharva25@gmail.com
+                    shrey7829@gmail.com
                   </span>
                 </a>
               </p>
-              {/* <p>ID: 2231568642</p> */}
-              {/* <button
-                className="btn btn-sm btn-outline w-100 p-0 d-flex justify-content-between align-items-center text-white mt-2"
-                onClick={() => toggleExpand("omor")}
-              >
-                More Info{" "}
-                {expanded.omor ? (
-                  <ChevronUp size={16} />
-                ) : (
-                  <ChevronDown size={16} />
-                )}
-              </button>
-              {expanded.omor && (
-                <ul className="list-group dev_cont">
-                  <li>Overall Design and Page Structure for Aura</li>
-                  <li>Chat Interface Integration</li>
-                  <li>Buffer Memory System for Persistent AI Context</li>
-                  <li>Trello-Style To-Do List for Study Management</li>
-                  <li>Topic Page Implementation with Dynamic Rendering</li>
-                  <li>Topic Summary Generation and Display</li>
-                  <li>Exam Page with Questions Fetched from the Database</li>
-                  <li>Submit Answer Functionality and Result Handling</li>
-                  <li>Study Metrics with Key Performance Features</li>
-                  <li>Graphical Analysis for Study Metrics and Progress</li>
-                  <li>Progress Page with Detailed Answer Analysis</li>
-                </ul>
-              )} */}
             </div>
           </div>
         </div>
