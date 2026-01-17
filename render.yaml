@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: aura-backend
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cd backend-js && npm install
+    startCommand: cd backend-js && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
