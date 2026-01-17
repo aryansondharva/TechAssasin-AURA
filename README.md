@@ -84,6 +84,7 @@ Aura/
 
 <!-- Add your team members here -->
 - **Aryan Sondharva** - [GitHub](https://github.com/aryansondharva)
+- **Shrey Kansara** - [GitHub](https://github.com/shreykansara)
 
 
 ---
