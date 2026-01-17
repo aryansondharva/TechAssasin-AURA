@@ -2,10 +2,11 @@ import app from './app.js';
 import config from './config/index.js';
 
 const PORT = config.port;
+const HOST = '0.0.0.0'; // Bind to all network interfaces for cloud deployment
 
 // Start server on configured port
-const server = app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
+const server = app.listen(PORT, HOST, () => {
+  console.log(`🚀 Server running on ${HOST}:${PORT}`);
   console.log(`📍 Health check: http://localhost:${PORT}/health`);
   console.log(`🌐 Environment: ${config.nodeEnv}`);
   console.log(`📁 API Base: http://localhost:${PORT}/api`);
