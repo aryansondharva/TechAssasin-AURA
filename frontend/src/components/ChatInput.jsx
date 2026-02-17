@@ -1,3 +1,4 @@
+#add the chat input file
 import React from "react";
 import TextareaAutosize from "react-textarea-autosize";
 import FileUpload from "./FileUpload";
