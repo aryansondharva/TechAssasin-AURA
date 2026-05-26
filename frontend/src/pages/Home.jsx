@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 // import aivis from "../assets/ai-assistant.png";
 import AuraVisual3D from "../components/AuraVisual3D";
@@ -21,7 +20,6 @@ import {
 const Home = () => {
   return (
     <div className="home-container">
-      <Header />
       <div className="container">
         <div className="hero banner">
           <div className="row">

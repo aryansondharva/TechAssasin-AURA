@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import auraLogo from "../assets/recallo.png";
+import auraLogo from "../assets/aura.webp";
 import { EqualApproximately } from "lucide-react";
 
 const Header = () => {
@@ -20,16 +20,6 @@ const Header = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    if (location.hash !== "#about") return;
-
-    const scrollTimer = window.setTimeout(() => {
-      document.getElementById("about")?.scrollIntoView({ block: "start" });
-    }, 0);
-
-    return () => window.clearTimeout(scrollTimer);
-  }, [location.pathname, location.hash]);
-
   const toggleNavbar = () => {
     setIsCollapsed(!isCollapsed);
   };
@@ -40,6 +30,14 @@ const Header = () => {
 
   const navLinkClass = (isActive) => `nav-link${isActive ? " active" : ""}`;
 
+  const scrollToPageTop = () => {
+    closeNavbar();
+
+    window.setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }, 0);
+  };
+
   const handleAboutClick = (event) => {
     closeNavbar();
 
@@ -47,17 +45,19 @@ const Header = () => {
 
     event.preventDefault();
     navigate("/#about");
-    document.getElementById("about")?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    window.setTimeout(() => {
+      document.getElementById("about")?.scrollIntoView({
+        behavior: "auto",
+        block: "start",
+      });
+    }, 0);
   };
 
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/" onClick={closeNavbar}>
+          <Link className="navbar-brand" to="/" onClick={scrollToPageTop}>
             <img
               src={auraLogo}
               alt="aura_logo logo"
@@ -78,7 +78,7 @@ const Header = () => {
                   className={navLinkClass(isHomePage && !isAboutActive)}
                   aria-current={isHomePage && !isAboutActive ? "page" : undefined}
                   to="/"
-                  onClick={closeNavbar}
+                  onClick={scrollToPageTop}
                 >
                   Home
                 </Link>
@@ -98,7 +98,7 @@ const Header = () => {
                   className={navLinkClass(location.pathname === "/features")}
                   aria-current={location.pathname === "/features" ? "page" : undefined}
                   to="/features"
-                  onClick={closeNavbar}
+                  onClick={scrollToPageTop}
                 >
                   Features
                 </Link>
@@ -108,7 +108,7 @@ const Header = () => {
                   className={navLinkClass(location.pathname === "/developers")}
                   aria-current={location.pathname === "/developers" ? "page" : undefined}
                   to="/developers"
-                  onClick={closeNavbar}
+                  onClick={scrollToPageTop}
                 >
                   Developers
                 </Link>
@@ -117,7 +117,7 @@ const Header = () => {
           </div>
 
           <div>
-            <Link to="/signin" className="btn btn-cs header-btn" onClick={closeNavbar}>
+            <Link to="/signin" className="btn btn-cs header-btn" onClick={scrollToPageTop}>
               Get Started
             </Link>
           </div>

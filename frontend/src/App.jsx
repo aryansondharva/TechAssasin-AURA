@@ -15,6 +15,8 @@ import Archive from "./pages/Archive";
 import Study_Metrics from "./pages/StudyMetrics";
 import Settings from "./pages/Settings";
 import Developers from "./pages/Developers";
+import Navsar from "./components/Navsar";
+import RouteScroll from "./components/RouteScroll";
 import VoiceAssistant from "./components/VoiceAssistant";
 import ExamReadiness from "./pages/ExamReadiness";
 import SharedAnalysis from "./pages/SharedAnalysis";
@@ -27,6 +29,8 @@ function App() {
   return (
     <Router>
       <VoiceAssistant />
+      <Navsar />
+      <RouteScroll />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/features" element={<Features />} />

@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import supabase from "../utils/supabaseClient";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
-import Header from "../components/Header";
 import axios from "axios";
 
 const API_URL = "http://localhost:5000/api";
@@ -185,8 +184,6 @@ export default function SignIn() {
   if (!session) {
     return (
       <div className="home-container dev-page">
-        <Header />
-
         <section className="dev-hero">
           <div className="dev-orb" style={{ width: 420, height: 420, top: "5%", left: "-8%", background: "radial-gradient(circle, #edb43722, transparent 70%)", animationDuration: "14s" }} />
           <div className="dev-orb" style={{ width: 300, height: 300, top: "20%", right: "-5%", background: "radial-gradient(circle, #e49c0018, transparent 70%)", animationDuration: "10s", animationDelay: "3s" }} />
@@ -286,7 +283,6 @@ export default function SignIn() {
   if (isVerifying) {
     return (
       <div className="home-container dev-page">
-        <Header />
         <section className="dev-hero">
           <div className="dev-orb" style={{ width: 420, height: 420, top: "5%", left: "-8%", background: "radial-gradient(circle, #edb43722, transparent 70%)", animationDuration: "14s" }} />
           
@@ -344,4 +340,3 @@ export default function SignIn() {
 
   return null; // Should be handled by useEffect redirect
 }
-
