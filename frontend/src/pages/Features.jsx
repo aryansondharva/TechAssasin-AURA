@@ -4,8 +4,8 @@ import Footer from "../components/Footer";
 // import aivis from "../assets/ai-assistant.png";
 import AuraVisual3D from "../components/AuraVisual3D";
 import AboutSection from "../components/AboutSection";
-import auraLogo from "../assets/recallo.png";
-import cta from "../assets/recall_cta.webp";
+import auraLogo from "../assets/aura.webp";
+import cta from "../assets/aura_cta.webp";
 import chatbox from "../assets/chatbox.webp";
 import documentmode from "../assets/document_mode.webp";
 import history from "../assets/history.webp";
@@ -58,7 +58,7 @@ const Features = () => {
           <div className="col-md-6">
             <img
               src={chatbox}
-              alt="aura_logo"
+              alt="aura_chat"
               className="img-fluid rbc rbc2"
             />
           </div>
@@ -113,7 +113,7 @@ const Features = () => {
           <div className="col-md-6 order-2 order-md-1">
             <img
               src={documentmode}
-              alt="aura_logo"
+              alt="document_mode"
               className="img-fluid rbc rbc2"
             />
           </div>
@@ -139,7 +139,7 @@ const Features = () => {
           <div className="col-md-6">
             <img
               src={history}
-              alt="aura_logo"
+              alt="history"
               className="img-fluid rbc rbc2"
             />
           </div>
@@ -166,7 +166,7 @@ const Features = () => {
           <div className="col-md-6 order-2 order-md-1">
             <img
               src={todolist}
-              alt="aura_logo"
+              alt="todo_list"
               className="img-fluid rbc rbc2"
             />
           </div>
@@ -195,7 +195,7 @@ const Features = () => {
           <div className="col-md-6">
             <img
               src={topic}
-              alt="aura_logo"
+              alt="topics"
               className="img-fluid rbc rbc2"
             />
           </div>
@@ -223,7 +223,7 @@ const Features = () => {
           <div className="col-md-6 order-2 order-md-1">
             <img
               src={studymetrics}
-              alt="aura_logo"
+              alt="study_metrics"
               className="img-fluid rbc rbc2"
             />
           </div>
@@ -251,7 +251,7 @@ const Features = () => {
           <div className="col-md-6">
             <img
               src={exams}
-              alt="aura_logo"
+              alt="exams"
               className="img-fluid rbc rbc2"
             />
           </div>
@@ -279,7 +279,7 @@ const Features = () => {
           <div className="col-md-6 order-2 order-md-1">
             <img
               src={progress}
-              alt="aura_logo"
+              alt="progress"
               className="img-fluid rbc rbc2"
             />
           </div>
@@ -304,7 +304,7 @@ const Features = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <img src={mail} alt="aura_logo" className="img-fluid rbc rbc2" />
+            <img src={mail} alt="mail" className="img-fluid rbc rbc2" />
           </div>
         </div>
       </div>
@@ -314,7 +314,7 @@ const Features = () => {
         <div className="row text-center">
           <img
             src={cta}
-            alt="aura_logo"
+            alt="aura_cta"
             className="img-fluid rbc rbc2 rbc3"
           />
         </div>

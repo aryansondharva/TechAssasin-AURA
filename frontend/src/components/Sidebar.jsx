@@ -1,6 +1,6 @@
 import React from "react";
 import { ListTodo, FileSliders, ListTree, Notebook, ChartPie, BookOpenCheck, FolderArchive, History, User, Cog, Brain, CodeXml  } from 'lucide-react';
-import auraLogo from "../assets/recallo.png";
+import auraLogo from "../assets/aura.webp";
 import { Link, useLocation } from "react-router-dom";
 import { EqualApproximately } from "lucide-react";
 import { MessageCircle } from "lucide-react";

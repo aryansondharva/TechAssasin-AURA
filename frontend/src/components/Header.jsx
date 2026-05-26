@@ -38,6 +38,19 @@ const Header = () => {
     }, 0);
   };
 
+  const scrollToAbout = () => {
+    const target = document.getElementById("about");
+    const headerOffset = document.querySelector(".header")?.getBoundingClientRect().height ?? 0;
+
+    if (!target) return;
+
+    window.scrollTo({
+      top: Math.max(target.getBoundingClientRect().top + window.scrollY - headerOffset - 24, 0),
+      left: 0,
+      behavior: "auto",
+    });
+  };
+
   const handleAboutClick = (event) => {
     closeNavbar();
 
@@ -45,12 +58,7 @@ const Header = () => {
 
     event.preventDefault();
     navigate("/#about");
-    window.setTimeout(() => {
-      document.getElementById("about")?.scrollIntoView({
-        behavior: "auto",
-        block: "start",
-      });
-    }, 0);
+    window.setTimeout(scrollToAbout, 0);
   };
 
   return (
@@ -60,7 +68,7 @@ const Header = () => {
           <Link className="navbar-brand" to="/" onClick={scrollToPageTop}>
             <img
               src={auraLogo}
-              alt="aura_logo logo"
+              alt="aura logo"
               className="img-fluid logo"
               
             />

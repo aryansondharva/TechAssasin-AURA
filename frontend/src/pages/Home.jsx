@@ -4,9 +4,9 @@ import Footer from "../components/Footer";
 // import aivis from "../assets/ai-assistant.png";
 import AuraVisual3D from "../components/AuraVisual3D";
 import AboutSection from "../components/AboutSection";
-import auraLogo from "../assets/recallo.png";
-import aura_banner from "../assets/recallo_banner.webp";
-import cta from "../assets/recall_cta.webp"
+import auraLogo from "../assets/aura.webp";
+import auraBanner from "../assets/aura_banner.webp";
+import cta from "../assets/aura_cta.webp"
 import {
   BrainCircuit,
   ScanSearch,
@@ -56,9 +56,9 @@ const Home = () => {
       </div>
 
       {/* about section */}
-      <div className="container pc" id="about">
+      <div className="container pc">
         <div className="row align-items-center g-5">
-          <div className="col-md-10 m-auto">
+          <div className="col-md-10 m-auto" id="about">
             <AboutSection />
           </div>
           <div className="col-md-12 col-xl-6">
@@ -84,8 +84,8 @@ const Home = () => {
           </div>
           <div className="col-md-12 col-xl-6">
             <img
-              src={aura_banner}
-              alt="aura_logo"
+              src={auraBanner}
+              alt="aura_banner"
               className="img-fluid rbc"
             />
           </div>
@@ -188,7 +188,7 @@ const Home = () => {
         <div className="row text-center">
            <img
               src={cta}
-              alt="aura_logo"
+              alt="aura_cta"
               className="img-fluid rbc rbc2 rbc3"
             />
         </div>

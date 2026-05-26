@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import Footer from "../components/Footer";
-import cta from "../assets/recall_cta.webp";
+import cta from "../assets/aura_cta.webp";
 import aryan from "../assets/aryan.webp";
-import faruq from "../assets/faruq.webp";
+import hetvi from "../assets/hetvi.webp";
+import manthan from "../assets/manthan.webp";
 
 /* ─── team data ─────────────────────────────────────────── */
 const TEAM = [
@@ -11,7 +12,7 @@ const TEAM = [
     role: "UI / UX Designer",
     email: "hlad.2317@gmail.com",
     specialty: "Crafting beautiful, intuitive experiences",
-    img: faruq,
+    img: hetvi,
     color: "#edb437",
     initials: "HL",
     github: "https://github.com/hlad-2317",
@@ -33,7 +34,7 @@ const TEAM = [
     role: "AI / ML Engineer",
     email: "rajpurohitmanthan5@gmail.com",
     specialty: "Designing robust APIs & databases",
-    img: faruq,
+    img: manthan,
     color: "#c87d00",
     initials: "MR",
     github: "https://github.com/manthansingh26",
@@ -44,7 +45,7 @@ const TEAM = [
     role: "Frontend Engineer",
     email: "developer4@gmail.com",
     specialty: "Creating seamless user interfaces",
-    img: faruq,
+    img: hetvi,
     color: "#f5c346",
     initials: "DP",
     github: "#",
