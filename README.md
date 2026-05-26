@@ -1,6 +1,6 @@
 <div align="center"> 
 
-<img src="./frontend/src/assets/recallo.png" alt="Aura Logo" width="150" />
+<img src="./frontend/src/assets/aura.webp" alt="Aura Logo" width="150" />
 
 
 **An AI-driven learning companion designed to transform study materials into interactive and resumable learning experiences.**
